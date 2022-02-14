@@ -1,18 +1,16 @@
 import React from "react";
 
 function AuthHeader({ authpages }) {
-
-    console.log("##############", window.location.pathname)
   return (
-    <div className="relative bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
+    <div className="relative">
+      <div className="max-w-full mx-auto bg-header px-4 sm:px-6 h-20">
+        <div className="flex justify-between items-center  py-3 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <a href="#">
               <span className="sr-only">Workflow</span>
               <img
-                className="h-8 w-auto sm:h-10"
-                src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                className="h-8 w-auto sm:h-10 text-xl" 
+                src="./vmix logo.png"
                 alt=""
               />
             </a>
@@ -33,38 +31,36 @@ function AuthHeader({ authpages }) {
                 aria-hidden="true"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M4 6h16M4 12h16M4 18h16"
                 />
               </svg>
             </button>
           </div>
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-              {
-                  window.location.pathname === "/signup" ? (
-                    <a
-                    href="/signin"
-                    className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900 "
-                  >
-                    Sign in
-                  </a>
-                  ) : window.location.pathname === "/signin" ? (
-                    <a
-                    href="/signup"
-                    className="hover:animate-bounce transition-delay: 1500ms ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-lg shadow-sm text-base font-medium text-white bg-blue hover:bg-indigo-700"
-                  >
-                    Get Started
-                  </a>
-                  ) : ``
-              }
-          
-         
+            {window.location.pathname === "/signup" ? (
+            <a
+            href="/signin"
+            className="h-14 w-28 rounded-sm  transition-delay: 1500ms ml-8 whitespace-nowrap  inline-flex items-center justify-center px-4 py-2 border-2 border-white shadow-sm text-lg font-medium text-white bg-header hover:bg-header"
+          >
+            Log In
+          </a>
+            ) : window.location.pathname === "/signin" ? (
+              <a
+                href="/signup"
+                className="h-14 rounded-sm  transition-delay: 1500ms ml-8 whitespace-nowrap  inline-flex items-center justify-center px-4 py-2 border-2 border-white shadow-sm text-lg font-medium text-white bg-header hover:bg-header"
+              >
+                Get Started
+              </a>
+            ) : (
+              ``
+            )}
           </div>
         </div>
       </div>
-
+      {/* 
       <div className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
         <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
           <div className="pt-5 pb-6 px-5">
@@ -119,9 +115,9 @@ function AuthHeader({ authpages }) {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div classNameName="">{authpages}</div>
+      <div className="">{authpages}</div>
     </div>
   );
 }

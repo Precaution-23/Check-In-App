@@ -13,6 +13,9 @@ module.exports = {
     colors: {
       transparent: "transparent",
       black: "#000",
+      footer: "#f7f7f7",
+      header: "#2e5fe8",
+      teal: "#fdfbf0",
       white: "#fff",
       blue: "#1FB6FF",
       purple: "#7E5BEF",
@@ -38,6 +41,7 @@ module.exports = {
       none: "0",
       sm: ".125rem",
       DEFAULT: ".25rem",
+      xl: "0.8rem",
       lg: ".5rem",
       full: "9999px",
       "4xl": "2rem",

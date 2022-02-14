@@ -1,10 +1,11 @@
 import React from "react";
+import Footer from "./Footer";
 
-function Header({ pages }) {
+function Header({ pages }) { 
   return (
-    <div className="relative bg-white">
-      <div className="max-w-full mx-auto px-4 sm:px-6">
-        <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
+    <div className="relative">
+      <div className="max-w-full mx-auto bg-header px-4 sm:px-6 sticky md:sticky top-0 z-40">
+        <div className="flex justify-between items-center  py-3 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <a href="#">
               <span className="sr-only">Workflow</span>
@@ -31,9 +32,9 @@ function Header({ pages }) {
                 aria-hidden="true"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M4 6h16M4 12h16M4 18h16"
                 />
               </svg>
@@ -43,27 +44,33 @@ function Header({ pages }) {
 
             <a
               href="#"
-              className=" hover:underline text-base font-medium text-gray-500 hover:text-gray-900"
+              className=" hover:underline text-lg font-medium text-white"
             >
               How it works
             </a>
             <a
-              href="#"
-              className="hover:underline text-base font-medium text-gray-500 hover:text-gray-900"
+              href="/blog"
+              className="hover:underline text-lg font-medium text-white "
             >
               Blog
+            </a>
+            <a
+              href="#"
+              className="hover:underline text-lg font-medium text-white "
+            >
+              About Us
             </a>
           </nav>
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
             <a
               href="/signin"
-              className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900 "
+              className="whitespace-nowrap text-lg font-medium text-white  "
             >
-              Sign in
+              Log in
             </a>
             <a
               href="/signup"
-              className="hover:animate-bounce transition-delay: 1500ms ml-8 whitespace-nowrap rounded-md inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-lg shadow-sm text-base font-medium text-white bg-blue hover:bg-indigo-700"
+              className="h-14 rounded-sm transition-delay: 1500ms ml-8 whitespace-nowrap  inline-flex items-center justify-center px-4 py-2 border-2 border-white shadow-sm text-lg font-medium text-white bg-header hover:bg-header"
             >
               Get Started
             </a>
@@ -71,7 +78,7 @@ function Header({ pages }) {
         </div>
       </div>
 
-      <div className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+      {/* <div className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
         <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
           <div className="pt-5 pb-6 px-5">
             <div className="flex items-center justify-between">
@@ -142,9 +149,10 @@ function Header({ pages }) {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div classNameName="">{pages}</div>
+      <div className="p-16">{pages}</div>
+      <Footer />
     </div>
   );
 }

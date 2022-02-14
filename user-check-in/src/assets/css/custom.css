@@ -6,3 +6,26 @@
     transform: scale(0.8, 1);
     display: inline-block;
   }
+
+  .insta-icon {
+    position: relative;
+    border-radius: 20%;
+    background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf)
+  }
+  .insta-icon:after,
+  .insta-icon:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 2px solid #fff;
+    transform: translate(-50%, -50%);
+    content: ''
+  }
+  .insta-icon:before {
+    border-radius: 20%
+  }
+  .insta-icon:after {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%
+  }
