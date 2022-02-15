@@ -29,7 +29,7 @@ function SignIn() {
     // chek if password match the requirements on change
     const checkPasswordvalidOnVhange = (value) => {
       if(!value.match(passw)){
-        return setErrorPasswordMessage('Minimun 8, at least a special character and a number')
+        return setErrorPasswordMessage('Min 8, a special character and a number')
       }else if(value.match(passw)){
         return setErrorPasswordMessage('')
       }
@@ -81,13 +81,13 @@ function SignIn() {
           type="email"
           name="emal"
           id="email"
-          className=" w-full h-full pl-6 pr-12 text-lg rounded-lg outline-none"
+          className=" w-full h-full pl-4 pr-12 text-lg rounded-lg outline-none"
           onChange={(e) => {
             setEmail(e.target.value)
             checkEmailValidOnChange(e.target.value)
           }}
         />
-        <p className="text-red float-left" > {`${errorEmailMessage}`}</p>
+        <p className="text-red" > {`${errorEmailMessage}`}</p>
         
       </div>
       
@@ -98,7 +98,7 @@ function SignIn() {
           type={show ? `text` : `password`}
           name="password"
           id="password"
-          className=" md:w-80 w-64 h-full pl-1 pr-12 text-lg rounded-lg outline-none"
+          className=" md:w-80 w-64 h-full pl-4 pr-12 text-lg rounded-lg outline-none"
           onChange={(e) => {
             setPassword(e.target.value)
             checkPasswordvalidOnVhange(e.target.value)
@@ -144,11 +144,11 @@ function SignIn() {
               </svg>
             )}
           </span>
-          <p className="text-red float-left" > {!passwordError ? `` : `${errorPasswordMessage}`}</p>
+          <p className="text-red" > {!passwordError ? `` : `${errorPasswordMessage}`}</p>
       </div>
 
       <div className="grid mx-auto justify-items-center max-w-xs md:max-w-sm mt-5 mb-10 h-10 md:h-10">
-        <button type="button" className=" mt-3 w-full h-full bg-blue rounded-[10rem] text-white  border-red-600 hover:bg-[#2e5fe8] text-lg"  onClick={logInUser}>
+        <button type="button" className=" mt-3 w-full h-full bg-blue rounded-[10rem] text-white  border-red-600 hover:bg-header text-lg"  onClick={logInUser}>
           Log In
         </button>
       </div>

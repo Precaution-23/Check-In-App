@@ -39,7 +39,7 @@ function SignUp() {
   // chek if password match the requirements on change
   const checkPasswordvalidOnVhange = (value) => {
     if(!value.match(passw)){
-      return setShowPasswordError('Minimun 8, at least a special character and a number')
+      return setShowPasswordError('Min 8, a special character and a number')
     }else if(value.match(passw)){
       return setShowPasswordError('')
     }
@@ -84,7 +84,7 @@ function SignUp() {
       setShowPasswordError('Password field can not be empty')
     }else if(!password.match(passw)){
       setPasswordError(true)
-      setShowPasswordError('Minimun 8, at least a special character and a number')
+      setShowPasswordError('Min 8, a special character and a number')
     }
 
     // console.log("#############", data)
@@ -104,7 +104,7 @@ function SignUp() {
             name="name"
 
             id="name"
-            className=" md:w-full w-full h-full pl-6 pr-12 text-lg rounded-lg outline-none"
+            className=" md:w-full w-full h-full pl-4 pr-12 text-lg rounded-lg outline-none"
             onChange={(e) => {
               setName(e.target.value);
               nameFieldNotEmpty(e.target.value)
@@ -118,13 +118,13 @@ function SignUp() {
             type="text"
             name="emal"
             id="email"
-            className=" md:w-full w-full h-full pl-6 pr-12 text-lg rounded-lg outline-none "
+            className=" md:w-full w-full h-full pl-4 pr-12 text-lg rounded-lg outline-none "
             onChange={(e) => {
               setEmail(e.target.value);
               checkMailValidOnChange(e.target.value)
             }}
           />
-           <p className="text-red float-left" > {!emailError ? `` : `${errorEmailMessage}`}</p>
+           <p className="text-red" > {!emailError ? `` : `${errorEmailMessage}`}</p>
         </div>
 
         <div className="my-8 relative mx-auto rounded-lg max-w-xs md:max-w-sm border-2  text-gray-dark bg-black-500  h-12 md:h-12">
@@ -133,7 +133,7 @@ function SignUp() {
             type={show ? "text" : "password"}
             name="password"
             id="password"
-            className="md:w-80 w-70 h-full pl-6 pr-12 text-lg rounded-lg outline-none"
+            className="md:w-80 w-64 h-full pl-4 pr-12 text-lg rounded-lg outline-none"
             onChange={(e) => {
               setPassword(e.target.value);
               checkPasswordvalidOnVhange(e.target.value)
@@ -184,7 +184,7 @@ function SignUp() {
               </svg>
             )}
           </span>
-          <p className="text-red float-left" > {!passwordError ? `` : `${showPasswordError}`}</p>
+          <p className="text-red" > {!passwordError ? `` : `${showPasswordError}`}</p>
         </div>
 
         <div className="grid mx-auto justify-items-center max-w-xs md:max-w-sm mt-5 mb-10 h-10 md:h-10">

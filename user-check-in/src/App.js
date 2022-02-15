@@ -1,4 +1,3 @@
-import './App.css';
 import "./assets/css/custom.css"
 import Header from './Components/Header';
 import { BrowserRouter, Routes, Route, Redirect } from "react-router-dom";

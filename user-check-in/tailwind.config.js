@@ -8,11 +8,12 @@ module.exports = {
       md: "768px",
       lg: "1024px",
       xl: "1280px",
-      "2xl": "1536px",
+      "2xl": "1920px",
     },
     colors: {
       transparent: "transparent",
       black: "#000",
+      red: "#FF0000",
       footer: "#f7f7f7",
       header: "#2e5fe8",
       teal: "#fdfbf0",
@@ -27,7 +28,7 @@ module.exports = {
       "gray-dark": "#273444",
       gray: {
         100: "#F7FAFC",
-        500: "#8492A6",
+        500: "#737373 ",
         900: "#1A202C",
       },
       "gray-light": "#D3DCE6",

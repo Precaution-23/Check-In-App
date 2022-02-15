@@ -4,43 +4,38 @@ import { Box, Badge, Image, Avatar, Input } from "@chakra-ui/react";
 function Blog() {
   return (
     <div>
-      <div className="grid grid-cols-1 md:grid-cols-2 border-2  mt-5  md:p-8 rounded-xl">
-        <div className="">
-        <Image
+      <div className="header md:h-144 h-80 md:-left-3 md:w-[103%] -left-6 md:absolute bg-[#2e5fe8] top-0">
+        <div className="md:pt-20 pt-2 md:mr-12">
+          <div className="text-center md:text-5xl text-3xl text-white mt-5">
+            Kingdom Of God
+          </div>
+
+          <div className="text-center md:text-xl text-base text-white mt-5">
+            Powered by Mega Youth Church
+          </div>
+
+          <div className="text-center md:text-2xl text-base text-white mt-5 ">
+            We are a God-fearing church rooted in the principles of God. Come
+            worship with us one day, God bless you.
+          </div>
+        </div>
+      </div>
+      <div className="md:pr-16 md:pl-16 2xl:pl-72 2xl:pr-72   pr-4 pl-4  relative md:top-52 -top-32 md:-mb-52">
+        <div className="grid grid-cols-1 md:grid-cols-2 mt-5  md:p-8 rounded bg-white">
+          <div className="">
+            <Image
               src="./Who-and-How-we-Hire-at-Float.png"
               alt="Image"
               className="rounded"
             />
-        </div>
+          </div>
 
-        <div className="">
-        {/* <Image
-              src="./Support-Is-More-Than-Responding-to-Customer-Tickets.png"
-              alt="Image"
-              className="rounded"
-            /> */}
-        </div>  
-        
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-6 lg:gap-12 mt-10">
-        <div className=" mx-auto mb-5 ">
-          <Box
-            px="3"
-            py="3"
-            className="transition rounded-lg md:rounded-lg mx-auto w-70 border-2 md:border delay-150 md:w-96 hover:-translate-y-1 hover:shadow-full hover:scale-100 hover:border"
-            overflow="hidden"
-          >
-            <Image
-              src="./Support-Is-More-Than-Responding-to-Customer-Tickets.png"
-              alt="Image"
-              className="rounded"
-            />
-
-            <Box className="pt-5">
-              <Box display="flex" alignItems="baseline">
-                <Badge px="3.5" py="1" colorScheme="purple">
-                  TITHES
-                </Badge>
+          <div className="mt-12 md:mx-10 mx-4">
+            <div className="flex mb-5">
+              <Badge px="3.5" py="1" colorScheme="purple">
+                TITHES
+              </Badge>
+              <div className="mt-1">
                 <Box
                   display="flex"
                   color="gray.500"
@@ -69,541 +64,618 @@ function Blog() {
                   </span>{" "}
                   5 min read
                 </Box>
-              </Box>
-
-              <Box
-                mt="2"
-                fontWeight="semibold"
-                as="h4"
-                lineHeight="tight"
-                isTruncated
-                className="float-left"
-              >
-                Tithe And Offering
-              </Box>
-
-              <Box
-                mt="2"
-                className="flex float-left text-left"
-                overflow="hidden"
-              >
-                In publishing and graphic design, Lorem ipsum is a placeholder
-                text commonly used to demonstrate the visual form of a document
-                or a typeface without
-              </Box>
-
-              <div className="float-left mb-5 mt-2">
-                <div className="flex justify-start">
-                  <div>
-                    <Avatar name="Dan Abrahmov" src="./Blogging.png" />{" "}
-                  </div>
-
-                  <div>
-                    <h3 className="my-auto pl-3 font-medium">
-                      By Charles Kwame{" "}
-                    </h3>
-                    <h3 className="my-auto pr-14 ">Secretary </h3>
-                  </div>
-                </div>
               </div>
-            </Box>
-          </Box>
-        </div>
-        <div className=" mx-auto mb-5 ">
-          <Box
-            px="3"
-            py="3"
-            className="transition rounded-lg md:rounded-lg mx-auto w-70 border-2 md:border delay-150 md:w-96 hover:-translate-y-1 hover:shadow-full hover:scale-100 hover:border "
-            overflow="hidden"
-          >
-            <Image
-              src="./Support-Is-More-Than-Responding-to-Customer-Tickets.png"
-              alt="Image"
-              className="rounded"
-            />
-
-            <Box className="pt-5">
-              <Box display="flex" alignItems="baseline">
-                <Badge px="3.5" py="1" colorScheme="purple">
-                  TITHES
-                </Badge>
-                <Box
-                  display="flex"
-                  color="gray.500"
-                  fontWeight="semibold"
-                  letterSpacing="wide"
-                  fontSize="xs"
-                  textTransform="uppercase"
-                  ml="2"
-                >
-                  23 Nov 2022 &bull;{" "}
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 mr-1"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </span>{" "}
-                  5 min read
-                </Box>
-              </Box>
-
-              <Box
-                mt="2"
-                fontWeight="semibold"
-                as="h4"
-                lineHeight="tight"
-                isTruncated
-                className="float-left"
-              >
-                Tithe And Offering
-              </Box>
-
-              <Box
-                mt="2"
-                className="flex float-left text-left"
-                overflow="hidden"
-              >
-                In publishing and graphic design, Lorem ipsum is a placeholder
-                text commonly used to demonstrate the visual form of a document
-                or a typeface without
-              </Box>
-
-              <div className="float-left mb-5 mt-2">
-                <div className="flex justify-start">
-                  <div>
-                    <Avatar name="Dan Abrahmov" src="./Blogging.png" />{" "}
-                  </div>
-
-                  <div>
-                    <h3 className="my-auto pl-3 font-medium">
-                      By Charles Kwame{" "}
-                    </h3>
-                    <h3 className="my-auto pr-14 ">Secretary </h3>
-                  </div>
-                </div>
-              </div>
-            </Box>
-          </Box>
-        </div>
-        <div className=" mx-auto mb-5 ">
-          <Box
-            px="3"
-            py="3"
-            className="transition rounded-lg md:rounded-lg mx-auto w-70 border-2 md:border delay-150 md:w-96 hover:-translate-y-1 hover:shadow-full hover:scale-100 hover:border"
-            overflow="hidden"
-          >
-            <Image
-              src="./Support-Is-More-Than-Responding-to-Customer-Tickets.png"
-              alt="Image"
-              className="rounded"
-            />
-
-            <Box className="pt-5">
-              <Box display="flex" alignItems="baseline">
-                <Badge px="3.5" py="1" colorScheme="purple">
-                  TITHES
-                </Badge>
-                <Box
-                  display="flex"
-                  color="gray.500"
-                  fontWeight="semibold"
-                  letterSpacing="wide"
-                  fontSize="xs"
-                  textTransform="uppercase"
-                  ml="2"
-                >
-                  23 Nov 2022 &bull;{" "}
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 mr-1"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </span>{" "}
-                  5 min read
-                </Box>
-              </Box>
-
-              <Box
-                mt="2"
-                fontWeight="semibold"
-                as="h4"
-                lineHeight="tight"
-                isTruncated
-                className="float-left"
-              >
-                Tithe And Offering
-              </Box>
-
-              <Box
-                mt="2"
-                className="flex float-left text-left"
-                overflow="hidden"
-              >
-                In publishing and graphic design, Lorem ipsum is a placeholder
-                text commonly used to demonstrate the visual form of a document
-                or a typeface without
-              </Box>
-
-              <div className="float-left mb-5 mt-2">
-                <div className="flex justify-start">
-                  <div>
-                    <Avatar name="Dan Abrahmov" src="./Blogging.png" />{" "}
-                  </div>
-
-                  <div>
-                    <h3 className="my-auto pl-3 font-medium">
-                      By Charles Kwame{" "}
-                    </h3>
-                    <h3 className="my-auto pr-14 ">Secretary </h3>
-                  </div>
-                </div>
-              </div>
-            </Box>
-          </Box>
-        </div>
-
-        <div className=" mx-auto mb-5 ">
-          <Box
-            px="3"
-            py="3"
-            className="transition rounded-lg md:rounded-lg mx-auto w-70 border-2 md:border delay-150 md:w-96 hover:-translate-y-1 hover:shadow-full hover:scale-100 hover:border"
-            overflow="hidden"
-          >
-            <Image
-              src="./Support-Is-More-Than-Responding-to-Customer-Tickets.png"
-              alt="Image"
-              className="rounded"
-            />
-
-            <Box className="pt-5">
-              <Box display="flex" alignItems="baseline">
-                <Badge px="3.5" py="1" colorScheme="purple">
-                  TITHES
-                </Badge>
-                <Box
-                  display="flex"
-                  color="gray.500"
-                  fontWeight="semibold"
-                  letterSpacing="wide"
-                  fontSize="xs"
-                  textTransform="uppercase"
-                  ml="2"
-                >
-                  23 Nov 2022 &bull;{" "}
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 mr-1"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </span>{" "}
-                  5 min read
-                </Box>
-              </Box>
-
-              <Box
-                mt="2"
-                fontWeight="semibold"
-                as="h4"
-                lineHeight="tight"
-                isTruncated
-                className="float-left"
-              >
-                Tithe And Offering
-              </Box>
-
-              <Box
-                mt="2"
-                className="flex float-left text-left"
-                overflow="hidden"
-              >
-                In publishing and graphic design, Lorem ipsum is a placeholder
-                text commonly used to demonstrate the visual form of a document
-                or a typeface without
-              </Box>
-
-              <div className="float-left mb-5 mt-2">
-                <div className="flex justify-start">
-                  <div>
-                    <Avatar name="Dan Abrahmov" src="./Blogging.png" />{" "}
-                  </div>
-
-                  <div>
-                    <h3 className="my-auto pl-3 font-medium">
-                      By Charles Kwame{" "}
-                    </h3>
-                    <h3 className="my-auto pr-14 ">Secretary </h3>
-                  </div>
-                </div>
-              </div>
-            </Box>
-          </Box>
-        </div>
-
-        <div className=" mx-auto mb-5 ">
-          <Box
-            px="3"
-            py="3"
-            className="transition rounded-lg md:rounded-lg mx-auto w-70 border-2 md:border delay-150 md:w-96 hover:-translate-y-1 hover:shadow-full hover:scale-100 hover:border"
-            overflow="hidden"
-          >
-            <Image
-              src="./Support-Is-More-Than-Responding-to-Customer-Tickets.png"
-              alt="Image"
-              className="rounded"
-            />
-
-            <Box className="pt-5">
-              <Box display="flex" alignItems="baseline">
-                <Badge px="3.5" py="1" colorScheme="purple">
-                  TITHES
-                </Badge>
-                <Box
-                  display="flex"
-                  color="gray.500"
-                  fontWeight="semibold"
-                  letterSpacing="wide"
-                  fontSize="xs"
-                  textTransform="uppercase"
-                  ml="2"
-                >
-                  23 Nov 2022 &bull;{" "}
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 mr-1"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </span>{" "}
-                  5 min read
-                </Box>
-              </Box>
-
-              <Box
-                mt="2"
-                fontWeight="semibold"
-                as="h4"
-                lineHeight="tight"
-                isTruncated
-                className="float-left"
-              >
-                Tithe And Offering
-              </Box>
-
-              <Box
-                mt="2"
-                className="flex float-left text-left"
-                overflow="hidden"
-              >
-                In publishing and graphic design, Lorem ipsum is a placeholder
-                text commonly used to demonstrate the visual form of a document
-                or a typeface without
-              </Box>
-
-              <div className="float-left mb-5 mt-2">
-                <div className="flex justify-start">
-                  <div>
-                    <Avatar name="Dan Abrahmov" src="./Blogging.png" />{" "}
-                  </div>
-
-                  <div>
-                    <h3 className="my-auto pl-3 font-medium">
-                      By Charles Kwame{" "}
-                    </h3>
-                    <h3 className="my-auto pr-14 ">Secretary </h3>
-                  </div>
-                </div>
-              </div>
-            </Box>
-          </Box>
-        </div>
-
-        <div className=" mx-auto mb-5 ">
-          <Box
-            px="3"
-            py="3"
-            className="transition rounded-lg md:rounded-lg mx-auto w-70 border-2 md:border delay-150 md:w-96 hover:-translate-y-1 hover:shadow-full hover:scale-100 hover:border"
-            overflow="hidden"
-          >
-            <Image
-              src="./Support-Is-More-Than-Responding-to-Customer-Tickets.png"
-              alt="Image"
-              className="rounded"
-            />
-
-            <Box className="pt-5">
-              <Box display="flex" alignItems="baseline">
-                <Badge px="3.5" py="1" colorScheme="purple">
-                  GIVING
-                </Badge>
-                <Box
-                  display="flex"
-                  color="gray.500"
-                  fontWeight="semibold"
-                  letterSpacing="wide"
-                  fontSize="xs"
-                  textTransform="uppercase"
-                  ml="2"
-                >
-                  23 Nov 2022 &bull;{" "}
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 mr-1"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </span>{" "}
-                  5 min read
-                </Box>
-              </Box>
-
-              <Box
-                mt="2"
-                fontWeight="semibold"
-                as="h4"
-                lineHeight="tight"
-                isTruncated
-                className="float-left"
-              >
-                The Acts Of Giving
-              </Box>
-
-              <Box
-                mt="2"
-                className="flex float-left text-left"
-                overflow="hidden"
-              >
-                In publishing and graphic design, Lorem ipsum is a placeholder
-                text commonly used to demonstrate the visual form of a document
-                or a typeface without
-              </Box>
-
-              <div className="float-left mb-5 mt-2">
-                <div className="flex justify-start">
-                  <div>
-                    <Avatar name="Dan Abrahmov" src="./Blogging.png" />{" "}
-                  </div>
-
-                  <div>
-                    <h3 className="my-auto pl-3 font-medium">
-                      By Charles Kwame{" "}
-                    </h3>
-                    <h3 className="my-auto pr-14 ">Secretary </h3>
-                  </div>
-                </div>
-              </div>
-            </Box>
-          </Box>
-        </div>
-      </div>
-
-      <Box
-        overflow="hidden"
-        className="py-8  bg-teal md:bg-white    md:rounded-lg md:mx-11 mb-40  border md:border-none "
-      >
-        <div className="flex md:justify-between">
-          <div className="">
-            <div className="md:mx-7 mx-11">
-              <Box
-                className="flex text-left w-70 max-w-3xl md:text-3xl"
-                overflow="hidden"
-                fontWeight="semibold"
-              >
-                Get exclusive monthly newsletter updates on everything that goes
-                on in the church. Subscribe to our newsletter.
-              </Box>
+            </div>
+            <div>
+              <h1 className="text-left text-3xl font-medium mb-8">
+                Jesus Is Our Lord And Saviour
+              </h1>
             </div>
 
-            <div className="mt-5 md:mt-10  mx-11 md:mx-7">
-              <Box
-                className="flex text-left w-70 text-base md:text-xl"
-                overflow="hidden"
-              >
-                Join the Godly readers club
-              </Box>
+            <div>
+              <p className="text-left text-lg text-gray-500">
+                Jesus Christ came to die for our sins. He is willing to always
+                forgive us.Come to Him all that are heavily laden and HHe will
+                give you rest
+              </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-4 md:mx-7">
-              <div className=" md:col-span-2 mx-11 md:mx-auto w-72 md:w-full">
-                {" "}
-                <Input placeholder="Your email" />
+            <div className="flex mb-5 mt-5">
+              <div>
+                <Avatar name="Dan Abrahmov" src="./Blogging.png" />{" "}
               </div>
-              <div className=" md:inline">
-                <div className=" h-10 md:h-10">
-                  <button
-                    type="button"
-                    className="md:w-36 w-72 rounded-sm h-full bg-blue text-white hover:bg-header md:text-xl md:mr-20"
+
+              <div>
+                <div className=" pl-3 font-medium">
+                  <h3>By Charles Kwame</h3>
+                </div>
+                <div>
+                  <h3 className=" pl-3">Secretary </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-wrap justify-around  md:gap-5 mt-10">
+          <div className="  mb-5 ">
+            <Box
+              px="3"
+              py="3"
+              className="transition rounded-lg md:rounded-lg w-70 border-2 md:border delay-150 md:w-96 hover:-translate-y-1 hover:shadow-full hover:scale-100 hover:border"
+              overflow="hidden"
+            >
+              <Image
+                src="./Self-Designing-Your-Productive-Work-Day.png"
+                alt="Image"
+                className="rounded"
+              />
+
+              <div className="flex mt-5">
+                <Badge px="3.5" py="1" colorScheme="purple">
+                  TITHES
+                </Badge>
+                <div className="mt-1">
+                  <Box
+                    display="flex"
+                    color="gray.500"
+                    fontWeight="semibold"
+                    letterSpacing="wide"
+                    fontSize="xs"
+                    textTransform="uppercase"
+                    ml="2"
                   >
-                    Subscribe
-                  </button>
+                    23 Nov 2022 &bull;{" "}
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-5 w-5 mr-1"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                    </span>{" "}
+                    5 min read
+                  </Box>
                 </div>
               </div>
-              <div className="md:hidden inline-block">
-                <Image
-                  src="./12.-Benefits-of-Newsletter-Subscription.png"
-                  alt="Image"
-                  className=" h-60"
-                />
-              </div>
-            </div>
-          </div>
 
-          <div className="mx-2 hidden md:inline-block">
-            <Image
-              src="./12.-Benefits-of-Newsletter-Subscription.png"
-              alt="Image"
-              className="rounded h-60"
-            />
+              <div className="">
+                <Box
+                  mt="2"
+                  fontWeight="semibold"
+                  as="h4"
+                  lineHeight="tight"
+                  isTruncated
+                  className=""
+                >
+                  Tithe And Offering
+                </Box>
+              </div>
+
+              <div>
+                <Box mt="2" className=" text-left" overflow="hidden">
+                  In publishing and graphic design, Lorem ipsum is a placeholder
+                  text commonly used to demonstrate the visual form of a
+                  document or a typeface without
+                </Box>
+              </div>
+
+              <div className="flex mb-5 mt-2">
+                <div>
+                  <Avatar name="Dan Abrahmov" src="./Blogging.png" />{" "}
+                </div>
+
+                <div>
+                  <div className=" pl-3 font-medium">
+                    <h3>By Charles Kwame</h3>
+                  </div>
+                  <div>
+                    <h3 className=" pl-3">Secretary </h3>
+                  </div>
+                </div>
+              </div>
+            </Box>
+          </div>
+          <div className="  mb-5 ">
+            <Box
+              px="3"
+              py="3"
+              className="transition rounded-lg md:rounded-lg w-70 border-2 md:border delay-150 md:w-96 hover:-translate-y-1 hover:shadow-full hover:scale-100 hover:border"
+              overflow="hidden"
+            >
+              <Image
+                src="./Who-and-How-we-Hire-at-Float.png"
+                alt="Image"
+                className="rounded"
+              />
+
+              <div className="flex mt-5">
+                <Badge px="3.5" py="1" colorScheme="purple">
+                  TITHES
+                </Badge>
+                <div className="mt-1">
+                  <Box
+                    display="flex"
+                    color="gray.500"
+                    fontWeight="semibold"
+                    letterSpacing="wide"
+                    fontSize="xs"
+                    textTransform="uppercase"
+                    ml="2"
+                  >
+                    23 Nov 2022 &bull;{" "}
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-5 w-5 mr-1"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                    </span>{" "}
+                    5 min read
+                  </Box>
+                </div>
+              </div>
+
+              <div className="">
+                <Box
+                  mt="2"
+                  fontWeight="semibold"
+                  as="h4"
+                  lineHeight="tight"
+                  isTruncated
+                  className=""
+                >
+                  Tithe And Offering
+                </Box>
+              </div>
+
+              <div>
+                <Box mt="2" className=" text-left" overflow="hidden">
+                  In publishing and graphic design, Lorem ipsum is a placeholder
+                  text commonly used to demonstrate the visual form of a
+                  document or a typeface without
+                </Box>
+              </div>
+
+              <div className="flex mb-5 mt-2">
+                <div>
+                  <Avatar name="Dan Abrahmov" src="./Blogging.png" />{" "}
+                </div>
+
+                <div>
+                  <div className=" pl-3 font-medium">
+                    <h3>By Charles Kwame</h3>
+                  </div>
+                  <div>
+                    <h3 className=" pl-3">Secretary </h3>
+                  </div>
+                </div>
+              </div>
+            </Box>
+          </div>
+          <div className="  mb-5 ">
+            <Box
+              px="3"
+              py="3"
+              className="transition rounded-lg md:rounded-lg w-70 border-2 md:border delay-150 md:w-96 hover:-translate-y-1 hover:shadow-full hover:scale-100 hover:border"
+              overflow="hidden"
+            >
+              <Image
+                src="./Support-Is-More-Than-Responding-to-Customer-Tickets.png"
+                alt="Image"
+                className="rounded"
+              />
+
+              <div className="flex mt-5">
+                <Badge px="3.5" py="1" colorScheme="purple">
+                  TITHES
+                </Badge>
+                <div className="mt-1">
+                  <Box
+                    display="flex"
+                    color="gray.500"
+                    fontWeight="semibold"
+                    letterSpacing="wide"
+                    fontSize="xs"
+                    textTransform="uppercase"
+                    ml="2"
+                  >
+                    23 Nov 2022 &bull;{" "}
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-5 w-5 mr-1"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                    </span>{" "}
+                    5 min read
+                  </Box>
+                </div>
+              </div>
+
+              <div className="">
+                <Box
+                  mt="2"
+                  fontWeight="semibold"
+                  as="h4"
+                  lineHeight="tight"
+                  isTruncated
+                  className=""
+                >
+                  Tithe And Offering
+                </Box>
+              </div>
+
+              <div>
+                <Box mt="2" className=" text-left" overflow="hidden">
+                  In publishing and graphic design, Lorem ipsum is a placeholder
+                  text commonly used to demonstrate the visual form of a
+                  document or a typeface without
+                </Box>
+              </div>
+
+              <div className="flex mb-5 mt-2">
+                <div>
+                  <Avatar name="Dan Abrahmov" src="./Blogging.png" />{" "}
+                </div>
+
+                <div>
+                  <div className=" pl-3 font-medium">
+                    <h3>By Charles Kwame</h3>
+                  </div>
+                  <div>
+                    <h3 className=" pl-3">Secretary </h3>
+                  </div>
+                </div>
+              </div>
+            </Box>
+          </div>
+          <div className="  mb-5 ">
+            <Box
+              px="3"
+              py="3"
+              className="transition rounded-lg md:rounded-lg w-70 border-2 md:border delay-150 md:w-96 hover:-translate-y-1 hover:shadow-full hover:scale-100 hover:border"
+              overflow="hidden"
+            >
+              <Image
+                src="./Who-and-How-we-Hire-at-Float.png"
+                alt="Image"
+                className="rounded"
+              />
+
+              <div className="flex mt-5">
+                <Badge px="3.5" py="1" colorScheme="purple">
+                  TITHES
+                </Badge>
+                <div className="mt-1">
+                  <Box
+                    display="flex"
+                    color="gray.500"
+                    fontWeight="semibold"
+                    letterSpacing="wide"
+                    fontSize="xs"
+                    textTransform="uppercase"
+                    ml="2"
+                  >
+                    23 Nov 2022 &bull;{" "}
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-5 w-5 mr-1"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                    </span>{" "}
+                    5 min read
+                  </Box>
+                </div>
+              </div>
+
+              <div className="">
+                <Box
+                  mt="2"
+                  fontWeight="semibold"
+                  as="h4"
+                  lineHeight="tight"
+                  isTruncated
+                  className=""
+                >
+                  Tithe And Offering
+                </Box>
+              </div>
+
+              <div>
+                <Box mt="2" className=" text-left" overflow="hidden">
+                  In publishing and graphic design, Lorem ipsum is a placeholder
+                  text commonly used to demonstrate the visual form of a
+                  document or a typeface without
+                </Box>
+              </div>
+
+              <div className="flex mb-5 mt-2">
+                <div>
+                  <Avatar name="Dan Abrahmov" src="./Blogging.png" />{" "}
+                </div>
+
+                <div>
+                  <div className=" pl-3 font-medium">
+                    <h3>By Charles Kwame</h3>
+                  </div>
+                  <div>
+                    <h3 className=" pl-3">Secretary </h3>
+                  </div>
+                </div>
+              </div>
+            </Box>
+          </div>
+          <div className="  mb-5 ">
+            <Box
+              px="3"
+              py="3"
+              className="transition rounded-lg md:rounded-lg w-70 border-2 md:border delay-150 md:w-96 hover:-translate-y-1 hover:shadow-full hover:scale-100 hover:border"
+              overflow="hidden"
+            >
+              <Image
+                src="./How-Extroverts-Can-Thrive-in-Asynchronous-Remote-Work.png"
+                alt="Image"
+                className="rounded"
+              />
+
+              <div className="flex mt-5">
+                <Badge px="3.5" py="1" colorScheme="purple">
+                  TITHES
+                </Badge>
+                <div className="mt-1">
+                  <Box
+                    display="flex"
+                    color="gray.500"
+                    fontWeight="semibold"
+                    letterSpacing="wide"
+                    fontSize="xs"
+                    textTransform="uppercase"
+                    ml="2"
+                  >
+                    23 Nov 2022 &bull;{" "}
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-5 w-5 mr-1"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                    </span>{" "}
+                    5 min read
+                  </Box>
+                </div>
+              </div>
+
+              <div className="">
+                <Box
+                  mt="2"
+                  fontWeight="semibold"
+                  as="h4"
+                  lineHeight="tight"
+                  isTruncated
+                  className=""
+                >
+                  Tithe And Offering
+                </Box>
+              </div>
+
+              <div>
+                <Box mt="2" className=" text-left" overflow="hidden">
+                  In publishing and graphic design, Lorem ipsum is a placeholder
+                  text commonly used to demonstrate the visual form of a
+                  document or a typeface without
+                </Box>
+              </div>
+
+              <div className="flex mb-5 mt-2">
+                <div>
+                  <Avatar name="Dan Abrahmov" src="./Blogging.png" />{" "}
+                </div>
+
+                <div>
+                  <div className=" pl-3 font-medium">
+                    <h3>By Charles Kwame</h3>
+                  </div>
+                  <div>
+                    <h3 className=" pl-3">Secretary </h3>
+                  </div>
+                </div>
+              </div>
+            </Box>
+          </div>
+          <div className="  mb-5 ">
+            <Box
+              px="3"
+              py="3"
+              className="transition rounded-lg md:rounded-lg w-70 border-2 md:border delay-150 md:w-96 hover:-translate-y-1 hover:shadow-full hover:scale-100 hover:border"
+              overflow="hidden"
+            >
+              <Image
+                src="./Self-Designing-Your-Productive-Work-Day.png"
+                alt="Image"
+                className="rounded"
+              />
+
+              <div className="flex mt-5">
+                <Badge px="3.5" py="1" colorScheme="purple">
+                  TITHES
+                </Badge>
+                <div className="mt-1">
+                  <Box
+                    display="flex"
+                    color="gray.500"
+                    fontWeight="semibold"
+                    letterSpacing="wide"
+                    fontSize="xs"
+                    textTransform="uppercase"
+                    ml="2"
+                  >
+                    23 Nov 2022 &bull;{" "}
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-5 w-5 mr-1"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                    </span>{" "}
+                    5 min read
+                  </Box>
+                </div>
+              </div>
+
+              <div className="">
+                <Box
+                  mt="2"
+                  fontWeight="semibold"
+                  as="h4"
+                  lineHeight="tight"
+                  isTruncated
+                  className=""
+                >
+                  Tithe And Offering
+                </Box>
+              </div>
+
+              <div>
+                <Box mt="2" className=" text-left" overflow="hidden">
+                  In publishing and graphic design, Lorem ipsum is a placeholder
+                  text commonly used to demonstrate the visual form of a
+                  document or a typeface without
+                </Box>
+              </div>
+
+              <div className="flex mb-5 mt-2">
+                <div>
+                  <Avatar name="Dan Abrahmov" src="./Blogging.png" />{" "}
+                </div>
+
+                <div>
+                  <div className=" pl-3 font-medium">
+                    <h3>By Charles Kwame</h3>
+                  </div>
+                  <div>
+                    <h3 className=" pl-3">Secretary </h3>
+                  </div>
+                </div>
+              </div>
+            </Box>
           </div>
         </div>
-      </Box>
+
+        <Box
+          overflow="hidden"
+          className="  bg-teal md:bg-white    md:rounded-lg md:mx-11 mb-40  border md:border-none "
+        >
+          <div className="flex md:justify-between m-4">
+            <div className="">
+              <div className="md:mx-7">
+                <Box
+                  className="flex  w-70 max-w-3xl md:text-3xl"
+                  overflow="hidden"
+                  fontWeight="semibold"
+                >
+                  Get exclusive monthly newsletter updates on everything that
+                  goes on in the church. Subscribe to our newsletter.
+                </Box>
+              </div>
+
+              <div className="mt-5 md:mt-10  md:mx-7">
+                <Box
+                  className="flex w-70 text-base md:text-xl mb-2"
+                  overflow="hidden"
+                >
+                  Join the Godly readers club
+                </Box>
+              </div>
+
+              <div className="grid md:grid-cols-3 gap-4 md:mx-7">
+                <div className=" md:col-span-2 md:mx-auto w-full md:w-full">
+                  {" "}
+                  <Input placeholder="Your email" />
+                </div>
+                <div className=" md:inline">
+                  <div className=" h-10 md:h-10">
+                    <button
+                      type="button"
+                      className="md:w-36 w-full rounded-sm h-full bg-blue text-white hover:bg-header md:text-xl md:mr-20"
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                </div>
+                <div className="md:hidden inline-block">
+                  <Image
+                    src="./12.-Benefits-of-Newsletter-Subscription.png"
+                    alt="Image"
+                    className=" h-60 rounded"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="mx-2 hidden md:inline-block">
+              <Image
+                src="./12.-Benefits-of-Newsletter-Subscription.png"
+                alt="Image"
+                className="rounded h-60"
+              />
+            </div>
+          </div>
+        </Box>
+      </div>
     </div>
   );
 }

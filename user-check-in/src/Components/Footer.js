@@ -3,25 +3,25 @@ import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
 
 function Footer() {
   return (
-    <div className="relative ">
-      <div className="max-w-full mx-auto bg-footer px-4 sm:px-6 sticky md:sticky bottom-0 md:h-96 max-h-68 border">
+    <div className="relative">
+      <div className="max-w-full mx-auto bg-footer px-4 sm:px-6 sticky md:sticky bottom-0 md:h-96 max-h-68 border 2xl:pr-52 2xl:pl-52">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 float-left md:float-none md:py-10 py-5 md:mx-44 ">
           <div>
             <div className="my-3 mx-7 text-2xl font-medium text-left">
               Church
             </div>
-            <div className="my-3 mx-7 text-left text-lg font-normal text-grey-900 cursor-pointer">
+            <div className="my-3 mx-7 text-left  text-lg font-normal text-grey-900 cursor-pointer">
               How It Works
             </div>
-            <div className="my-3 mx-7 text-left text-lg font-normal text-grey-900 cursor-pointer">
+            <div className="my-3 mx-7 text-left  text-lg font-normal text-grey-900 cursor-pointer">
               Blog
             </div>
-            <div className="my-3 mx-7 text-left text-lg font-normal text-grey-900 cursor-pointer">
+            <div className="my-3 mx-7 text-left  text-lg font-normal text-grey-900 cursor-pointer">
               About Us
             </div>
           </div>
           <div>
-            <div className="my-3 mx-7 text-2xl font-medium md:text-left text-left ">
+            <div className="my-3 mx-7 text-2xl font-medium md:text-left text-left "> 
               Resources
             </div>
             <div className="my-3 mx-7 md:text-left text-left  text-lg font-normal text-grey-900 cursor-pointer">

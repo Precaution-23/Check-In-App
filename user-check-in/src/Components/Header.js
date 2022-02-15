@@ -151,7 +151,7 @@ function Header({ pages }) {
         </div>
       </div> */}
 
-      <div className="p-16">{pages}</div>
+      <div className="">{pages}</div>
       <Footer />
     </div>
   );
