@@ -87,7 +87,7 @@ function SignIn() {
             checkEmailValidOnChange(e.target.value)
           }}
         />
-        <p className="text-red" > {`${errorEmailMessage}`}</p>
+        <p id="email-error" className="text-red" > {`${errorEmailMessage}`}</p>
         
       </div>
       
@@ -144,7 +144,7 @@ function SignIn() {
               </svg>
             )}
           </span>
-          <p className="text-red" > {!passwordError ? `` : `${errorPasswordMessage}`}</p>
+          <p id="password-error" className="text-red" > {!passwordError ? `` : `${errorPasswordMessage}`}</p>
       </div>
 
       <div className="grid mx-auto justify-items-center max-w-xs md:max-w-sm mt-5 mb-10 h-10 md:h-10">
