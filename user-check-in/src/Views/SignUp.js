@@ -92,14 +92,14 @@ function SignUp() {
 
   return (
     <div className="justify-center mx-auto my-auto md:mt-10 shadow-none  h-fit max-w-3xl md:rounded-lg mb-10 ">
-      <div className="text-center mt-5">
-        <h1 className="text-2xl font-semibold">Sign Up</h1>
+      <div className="text-center mt-16">
+        <h1 className="text-2xl font-semibold">Create your account</h1>
       </div>
       <form onSubmit={registerUser}>
 
         <div className="my-8 relative mx-auto rounded-lg max-w-xs md:max-w-sm border-2  text-gray-dark bg-black-500  h-12 md:h-12">
           <input
-            placeholder="Name*"
+            placeholder="Name"
             type="text"
             name="name"
 
@@ -114,7 +114,7 @@ function SignUp() {
         </div>
         <div className="my-8 relative mx-auto rounded-lg max-w-xs md:max-w-sm border-2  text-gray-dark bg-black-500  h-12 md:h-12">
           <input
-            placeholder="Email*"
+            placeholder="Email"
             type="text"
             name="emal"
             id="email"
@@ -129,7 +129,7 @@ function SignUp() {
 
         <div className="my-8 relative mx-auto rounded-lg max-w-xs md:max-w-sm border-2  text-gray-dark bg-black-500  h-12 md:h-12">
           <input
-            placeholder="Password*"
+            placeholder="Password"
             type={show ? "text" : "password"}
             name="password"
             id="password"
@@ -199,13 +199,13 @@ function SignUp() {
       </form>
 
       <div className="text-center md:mb-[20]">
-        Already a user?..
+        Already have an account? 
         <span>
           <a
             href="/signin"
-            className="whitespace-nowrap text-base font-medium text-blue  "
+            className="whitespace-nowrap text-base font-medium text-blue ml-1"
           >
-            Log in
+            Log In
           </a>
         </span>
       </div>

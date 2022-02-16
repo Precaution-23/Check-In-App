@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "./Footer";
+import { HiChevronDoubleRight } from "react-icons/hi";
 
 function Header({ pages }) { 
   return (
@@ -70,9 +71,12 @@ function Header({ pages }) {
             </a>
             <a
               href="/signup"
-              className="h-14 rounded-sm transition-delay: 1500ms ml-8 whitespace-nowrap  inline-flex items-center justify-center px-4 py-2 border-2 border-white shadow-sm text-lg font-medium text-white bg-header hover:bg-header"
+              className="h-14 rounded-md transition-delay: 1500ms ml-8 whitespace-nowrap  inline-flex items-center justify-center px-4 py-2 border-2 border-white shadow-sm text-lg font-medium text-white bg-header hover:bg-header"
             >
-              Get Started
+              <span className="flex">
+                <div>Get Started</div>
+                <div className="mt-1 ml-1"><HiChevronDoubleRight size={20} /></div>
+              </span>
             </a>
           </div>
         </div>

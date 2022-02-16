@@ -1,4 +1,5 @@
 import React from "react";
+import { HiChevronDoubleRight } from "react-icons/hi";
 
 function AuthHeader({ authpages }) {
   return (
@@ -43,17 +44,20 @@ function AuthHeader({ authpages }) {
             {window.location.pathname === "/signup" ? (
             <a
             href="/signin"
-            className="h-14 w-28 rounded-sm  transition-delay: 1500ms ml-8 whitespace-nowrap  inline-flex items-center justify-center px-4 py-2 border-2 border-white shadow-sm text-lg font-medium text-white bg-header hover:bg-header"
+            className="h-14 w-28 rounded-md  transition-delay: 1500ms ml-8 whitespace-nowrap  inline-flex items-center justify-center px-4 py-2 border-2 border-white shadow-sm text-lg font-medium text-white bg-header hover:bg-header"
           >
             Log In
           </a>
             ) : window.location.pathname === "/signin" ? (
               <a
-                href="/signup"
-                className="h-14 rounded-sm  transition-delay: 1500ms ml-8 whitespace-nowrap  inline-flex items-center justify-center px-4 py-2 border-2 border-white shadow-sm text-lg font-medium text-white bg-header hover:bg-header"
-              >
-                Get Started
-              </a>
+              href="/signup"
+              className="h-14 rounded-md transition-delay: 1500ms ml-8 whitespace-nowrap  inline-flex items-center justify-center px-4 py-2 border-2 border-white shadow-sm text-lg font-medium text-white bg-header hover:bg-header"
+            >
+              <span className="flex">
+                <div>Get Started</div>
+                <div className="mt-1 ml-1"><HiChevronDoubleRight size={20} /></div>
+              </span>
+            </a>
             ) : (
               ``
             )}

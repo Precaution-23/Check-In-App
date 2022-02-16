@@ -20,7 +20,7 @@ function Blog() {
           </div>
         </div>
       </div>
-      <div className="md:pr-16 md:pl-16 2xl:pl-72 2xl:pr-72   pr-4 pl-4  relative md:top-52 -top-32 md:-mb-52">
+      <div className="md:pr-16 md:pl-16 2xl:pl-72 2xl:pr-72   pr-4 pl-4  relative md:top-52 -top-32 md:mb-80 -mb-52">
         <div className="grid grid-cols-1 md:grid-cols-2 mt-5  md:p-8 rounded bg-white">
           <div className="">
             <Image
@@ -617,7 +617,7 @@ function Blog() {
 
         <Box
           overflow="hidden"
-          className="  bg-teal md:bg-white    md:rounded-lg md:mx-11 mb-40  border md:border-none "
+          className="  bg-teal md:bg-white rounded md:rounded-lg md:mx-11 mb-40  border md:border-none "
         >
           <div className="flex md:justify-between m-4">
             <div className="">
@@ -650,7 +650,7 @@ function Blog() {
                   <div className=" h-10 md:h-10">
                     <button
                       type="button"
-                      className="md:w-36 w-full rounded-sm h-full bg-blue text-white hover:bg-header md:text-xl md:mr-20"
+                      className="md:w-36 w-full rounded-md h-full bg-blue text-white hover:bg-header md:text-xl md:mr-20"
                     >
                       Subscribe
                     </button>

@@ -71,13 +71,13 @@ function SignIn() {
 
   return (
     <div className="justify-center mx-auto my-auto md:mt-10  shadow-none h-fit max-w-3xl  mb-10 ">
-      <div className="text-center mt-5">
-        <h1 className="text-2xl font-semibold" >Log In</h1>
+      <div className="text-center mt-16">
+        <h1 className="text-2xl font-semibold" >Login to your account</h1>
       </div>
       <form onSubmit={logInUser}>
       <div className="my-8 relative mx-auto rounded-lg max-w-xs md:max-w-sm border-2  text-gray-dark bg-black-500  h-12 md:h-12">
         <input
-          placeholder="Email*"
+          placeholder="Your email"
           type="email"
           name="emal"
           id="email"
@@ -94,7 +94,7 @@ function SignIn() {
 
       <div className="my-8 relative mx-auto rounded-lg max-w-xs md:max-w-sm border-2  text-gray-dark bg-black-500  h-12 md:h-12">
         <input
-          placeholder="Password*"
+          placeholder="Your password"
           type={show ? `text` : `password`}
           name="password"
           id="password"
@@ -154,14 +154,14 @@ function SignIn() {
       </div>
       </form>
 
-      <div className="text-center md:mb-20">
-        Don't have an account?..
+      <div className="text-center md:mb-20 ">
+        Don't have an account? 
         <span>
         <a
           href="/signup"
-          className="whitespace-nowrap text-base font-medium text-blue "
+          className="whitespace-nowrap text-base font-medium text-blue ml-1"
         >
-          Sign Up
+          Create one
         </a>
         </span>
       </div>

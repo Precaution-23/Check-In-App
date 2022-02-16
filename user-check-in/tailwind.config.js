@@ -42,6 +42,7 @@ module.exports = {
       none: "0",
       sm: ".125rem",
       DEFAULT: ".25rem",
+      md: "0.3rem",
       xl: "0.8rem",
       lg: ".5rem",
       full: "9999px",
