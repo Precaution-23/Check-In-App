@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import {validEmail} from "../Services/validations"
+import BeatLoader from "react-spinners/BeatLoader";
+
 
 function SignUp() {
   const [name, setName] = useState("");
@@ -12,6 +14,7 @@ function SignUp() {
   const [nameMessage, setNameMessage] = useState(false);
   const [passwordError, setPasswordError] = useState(false);
   const [emailError, setEmailError] = useState(false);
+  const [showLoader, setshowLoader] = useState(false)
 
 
   // toggle between viewing password or not
@@ -59,6 +62,8 @@ function SignUp() {
       email,
       password,
     };
+
+    setshowLoader(true)
 
     if(name === "" && email === "" && password === ""){
       setNameMessage(true)
@@ -193,7 +198,7 @@ function SignUp() {
             className="mt-3 w-full h-full bg-blue rounded-[10rem] text-white  border-red-600 hover:bg-header text-lg"
             onClick={registerUser}
           >
-            Sign Up
+            {showLoader ? <BeatLoader  size={12} color="#ffffff"  /> : `Sign Up` } 
           </button>
         </div>
       </form>

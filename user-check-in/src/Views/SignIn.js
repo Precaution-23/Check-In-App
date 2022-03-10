@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import {validEmail} from "../Services/validations"
+import BeatLoader from "react-spinners/BeatLoader";
 
 function SignIn() {
   const [email, setEmail] = useState("");
@@ -8,7 +9,8 @@ function SignIn() {
   const [errorEmailMessage, setEmailErrorMessage] = useState("");
   const [showError, setshowError] = useState(false);
   const [passwordError, setPasswordError] = useState(false);
-  const [errorPasswordMessage, setErrorPasswordMessage] = useState("");
+  const [errorPasswordMessage, setErrorPasswordMessage] = useState();
+  const [showLoader, setshowLoader] = useState(false)
 
   // toggle between viewing password or not
   const handleClick = () => setShow(!show)
@@ -20,13 +22,13 @@ function SignIn() {
   // cheking of email validity whiles user is typing
   const checkEmailValidOnChange = (value) => {
     if(!validEmail(value) ){
-      return  setEmailErrorMessage('Please provide a valid email address')
+      return  setEmailErrorMessage('error')
     }else if(validEmail(value)){
       return  setEmailErrorMessage('')
     }
   }
 
-    // chek if password match the requirements on change
+    // check if password match the requirements on change
     const checkPasswordvalidOnVhange = (value) => {
       if(!value.match(passw)){
         return setErrorPasswordMessage('Min 8, a special character and a number')
@@ -48,6 +50,8 @@ function SignIn() {
         email,
         password,
       };
+
+      setshowLoader(true)
 
       if(email === "" && password === ""){
         setshowError(true)
@@ -149,7 +153,8 @@ function SignIn() {
 
       <div className="grid mx-auto justify-items-center max-w-xs md:max-w-sm mt-5 mb-10 h-10 md:h-10">
         <button type="button" className=" mt-3 w-full h-full bg-blue rounded-[10rem] text-white  border-red-600 hover:bg-header text-lg"  onClick={logInUser}>
-          Log In
+        
+           {showLoader ? <BeatLoader  size={12} color="#ffffff"  /> : `Log In` } 
         </button>
       </div>
       </form>
