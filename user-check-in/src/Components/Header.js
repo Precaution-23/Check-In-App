@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Footer from "./Footer";
-import { Button } from "@nextui-org/react";
-
+import { Button, Modal } from "@nextui-org/react";
 import { HiViewList } from "react-icons/hi";
 import { useDisclosure } from "@chakra-ui/react";
 import {
@@ -12,16 +11,35 @@ import {
   DrawerContent,
   DrawerCloseButton,
 } from "@chakra-ui/react";
+import NewSignUp from "./NewSignUp";
+import NewLogin from "./NewLogin";
 
 function Header({ pages }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
 
+  const [showSigUp, setshowSigUp] = useState(false)
+  const [showSignIn, setshowSignIn] = useState(false)
+
+  
+  const closeSignUpModal = () => {
+    setshowSigUp(false);
+  };
+
+    const closeSigInModal = () => {
+      setshowSignIn(false);
+    };
+
+
   // logics for routing to login
-  const handlerLogin = () => window.location.assign('/auth/signin');
+  const handlerLogin = () => {
+    setshowSignIn(true)
+  };
 
   // logics for routing to signup
-  const handlerSignUp = () => window.location.assign('/auth/signup');
+  const handlerSignUp = () => {
+    setshowSigUp(true)
+  }
 
   return (
     <div className="relative">
@@ -99,6 +117,27 @@ function Header({ pages }) {
           </div>
         </div>
       </div>
+
+      <Modal
+          preventClose
+          closeButton
+          aria-labelledby="modal-title"
+          open={showSigUp}
+          onClose={closeSignUpModal}
+        >
+          <NewSignUp />
+        </Modal>
+
+        
+      <Modal
+          preventClose
+          closeButton
+          aria-labelledby="modal-title"
+          open={showSignIn}
+          onClose={closeSigInModal}
+        >
+          <NewLogin />
+        </Modal>
 
       <Drawer
         isOpen={isOpen}

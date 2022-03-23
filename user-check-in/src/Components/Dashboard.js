@@ -173,7 +173,7 @@ export default function Dashboard() {
 
       case "actions":
         return (
-          <Row justify="center" align="center">
+          <Row  justify="center" align="center">
             <Col css={{ d: "flex" }}>
               <Tooltip content="Details">
                 <IconButton onClick={() => console.log("View user", user.id)}>
@@ -211,7 +211,6 @@ export default function Dashboard() {
       css={{
         height: "auto",
         minWidth: "100%",
-        borderRadius: "0",
       }}
       selectionMode="none"
     >

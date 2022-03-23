@@ -10,10 +10,8 @@ import {
   Link,
 } from "@nextui-org/react";
 import { validEmail } from "../Services/validations";
-import { useTheme } from "@nextui-org/react";
 
 function NewLogin() {
-  const { theme } = useTheme();
   const [visible, setVisible] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -42,7 +40,6 @@ function NewLogin() {
     }
   };
 
-  console.log("#############", theme);
 
   // check if password match the requirements on change
   const checkPasswordvalidOnVhange = (value) => {
@@ -82,13 +79,6 @@ function NewLogin() {
 
   return (
     <div>
-      <Modal
-        preventClose
-        closeButton
-        aria-labelledby="modal-title"
-        open={visible}
-        onClose={closeLoginModal}
-      >
         <Modal.Header>
           <Text id="modal-title" size={18}>
             <Text b size={18}>
@@ -158,7 +148,6 @@ function NewLogin() {
             )}
           </Button>
         </Modal.Footer>
-      </Modal>
 
     </div>
   );

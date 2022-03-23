@@ -6,7 +6,7 @@ import { useTheme } from '@nextui-org/react';
 
 function NewSignUp() {
   const { theme } = useTheme();
-  const [signUpVisible, setsignUpVisible] = useState(false);
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -14,11 +14,6 @@ function NewSignUp() {
   const [errorEmailMessage, setErrorEmailMessage] = useState("primary");
   const [showPasswordError, setShowPasswordError] = useState("primary");
   const [showLoader, setshowLoader] = useState(false)
-
-  // logics for sign up modal
-  const closeSignUpModal = () => {
-    setsignUpVisible(false);
-  };
 
    // logics for routing to signin
    const handlerLogIn = () => window.location.assign('/auth/signin');
@@ -76,22 +71,11 @@ function NewSignUp() {
           setShowPasswordError('error')
         }
     
-        // console.log("#############", data)
       };
-
-      useEffect(() => {
-        setsignUpVisible(true)
-      }, [])
 
   return (
     <div>
-        <Modal
-          preventClose
-          closeButton
-          aria-labelledby="modal-title"
-          open={signUpVisible}
-          onClose={closeSignUpModal}
-        >
+
           <Modal.Header>
             <Text id="modal-title" size={18}>
               <Text b size={18}>
@@ -149,7 +133,6 @@ function NewSignUp() {
             {showLoader ? <Loading type="points" color="white" size="sm" />  : `Sign Up`} 
             </Button>
           </Modal.Footer>
-        </Modal>
     </div>
   )
 }
