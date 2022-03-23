@@ -25,7 +25,7 @@ function Header({ pages }) {
 
   return (
     <div className="relative">
-      <div className="max-w-full mx-auto bg-header px-4 sm:px-6 sticky md:sticky top-0 z-40">
+      <div className="max-w-full mx-auto bg-header px-4 sm:px-6 sticky md:sticky top-0 z-[1000]">
         <div className="flex justify-between items-center  py-3 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <a href="#">
@@ -47,6 +47,12 @@ function Header({ pages }) {
             />
           </div>
           <nav className="hidden md:flex space-x-10">
+          <a
+              href="/dashboard"
+              className=" hover:underline text-lg font-medium text-white"
+            >
+              Dashboard
+            </a>
             <a
               href="#"
               className=" hover:underline text-lg font-medium text-white"
